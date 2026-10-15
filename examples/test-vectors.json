@@ -1,0 +1,22 @@
+{
+  "secret": "test_secret_do_not_use_in_production",
+  "timestamp": "1791770943",
+  "note": "signature = lowercase hex HMAC-SHA256(secret, timestamp + '.' + raw UTF-8 body)",
+  "cases": [
+    {
+      "name": "ascii body",
+      "body": "{\"api_version\":\"2026-10\",\"id\":\"EX-0001\"}",
+      "signature": "7b5a6bc103b91b1d64853e893d55a30c072e624d9953cc824c233643369f8dd2"
+    },
+    {
+      "name": "unicode body",
+      "body": "{\"summary\":\"Token «Sealcoin» – café\"}",
+      "signature": "6d246f1930734da203601d432c63b52605111d012b3056be7a4f620eb375c4dc"
+    },
+    {
+      "name": "example alert",
+      "body": "{\"api_version\":\"2026-10\",\"id\":\"EX-0002\",\"type\":\"operator_cluster_buy\",\"level\":\"COORDINATED\",\"detected_at_utc\":\"2026-10-15 01:00:05\",\"token\":\"BSGSHM81PqXMW17ZTtzmzJnMn5SPM9TaXMpYhgDEnt2D\",\"operator\":{\"id\":\"TW-9001\",\"address\":\"DuejC8PsaVLvK2KZSUxMqSE57XiPRa6rFdm7sXSvveSU\"},\"summary\":\"5 wallets linked to tracked operator TW-9001 bought this token shortly after launch.\",\"evidence\":[{\"step\":\"buy\",\"wallet\":\"DWUpVpXsDumwUqPW8HPnMMC5FsYBXS2mKxNNVm5qLjZ9\",\"transaction\":\"3R1YTVEh4ZxHpbX8VAQHWC7387qH1XNQhkMw65YpdpWciebuSdXDAVEvAwvpUZGXtiPxfUNtMhxogvLKU5fCjkAD\"},{\"step\":\"buy\",\"wallet\":\"ByQSEjnQJi5B81J1XMDA4zzwfvdsYvYY7Q6Y4VQ3UcmD\",\"transaction\":\"YViF2hGMB6y5sRAjHk8QjTgGMpnAdjoZ4Mgnt9tyAcrdCcjaPWVhYXUKV8wdcakZicHEMV3kGywfgYzM2nvftsW\"},{\"step\":\"buy\",\"wallet\":\"3xsiXCtS1TMVHnH2AWWWyGiyd76Mt1u7qFFrmoCXxupH\",\"transaction\":\"3yaHrSAn11cSAs53LFFrFAWaacfMvpUegLBjzW5WuirF1CyuS5uD7Q5SG8U1ff4wGwrb9eYxCTvHyKSihu6y1PvL\"},{\"step\":\"buy\",\"wallet\":\"6Sk26UvehQmE85kwDgPsTBi5weCs4xWXbC9Nffrz2wto\",\"transaction\":\"2EQxUzdGP87rVLAmfM5rHDWLmBQhxzipnfirt5yvhqxYgujLRsCbch7ASbgo2eM4VQ7D6BYS5ZuGpcKyHDzjm3tz\"},{\"step\":\"buy\",\"wallet\":\"EEkAZ4VLsWk4bVkoL8GssC3u836MiquGSHsb9H3wxHQH\",\"transaction\":\"2Wjq1vXV72XQwssc38qqA8oJctwuaJ3P7xi6A7uLuCJUU5Xz2FLDDEJ1rEw5dpDxC9EvJupuyoTLz7hydfQXhLxM\"}],\"transaction\":\"3R1YTVEh4ZxHpbX8VAQHWC7387qH1XNQhkMw65YpdpWciebuSdXDAVEvAwvpUZGXtiPxfUNtMhxogvLKU5fCjkAD\",\"sandbox\":true}",
+      "signature": "bce63dfc858abcaeba004be9c8efa46323ad8ded94e16781343da869d385abf9"
+    }
+  ]
+}

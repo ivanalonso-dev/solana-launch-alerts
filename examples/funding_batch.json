@@ -1,0 +1,42 @@
+{
+  "api_version": "2026-10",
+  "id": "EX-0003",
+  "type": "funding_batch",
+  "level": "RELATED",
+  "detected_at_utc": "2026-10-15 00:41:10",
+  "token": null,
+  "operator": {
+    "id": "TW-9001",
+    "address": "DuejC8PsaVLvK2KZSUxMqSE57XiPRa6rFdm7sXSvveSU"
+  },
+  "summary": "Tracked operator TW-9001 funded 5 new wallets at once.",
+  "evidence": [
+    {
+      "step": "fund",
+      "wallet": "DWUpVpXsDumwUqPW8HPnMMC5FsYBXS2mKxNNVm5qLjZ9",
+      "transaction": "66MxBozUr9P7HBdhQqLz2BVYf2pxocK6HYs2MrXsM1GnEGuqRBMqBkz9CkpbTUxB9qyFgUVPz34dgTa5iGFEQbxY"
+    },
+    {
+      "step": "fund",
+      "wallet": "ByQSEjnQJi5B81J1XMDA4zzwfvdsYvYY7Q6Y4VQ3UcmD",
+      "transaction": "3916jMsiNyEWzpaBpmd5zw1uAHtWs5XB8bLg9W4H2L286DnXzthLL7YYv4BC8xRj2XXFXsBQajz2oAsCND4kEWbr"
+    },
+    {
+      "step": "fund",
+      "wallet": "3xsiXCtS1TMVHnH2AWWWyGiyd76Mt1u7qFFrmoCXxupH",
+      "transaction": "2Lss5DMdWxT2DreQ5PfwvePkeSvApt1KphG2nVG3MNG8bLEs551LcyzRak4XZBFVtwk8PGL1oocuLBU7ZCJyEmz9"
+    },
+    {
+      "step": "fund",
+      "wallet": "6Sk26UvehQmE85kwDgPsTBi5weCs4xWXbC9Nffrz2wto",
+      "transaction": "5A6wMw5GAUWmNhPkSXAirDaxf6Q1nw1DNHwYX7q5Gtw4F1tzWMTqiMrCWiYrBfNsfX8Tv2whAr4CZc7zBik1BmuX"
+    },
+    {
+      "step": "fund",
+      "wallet": "EEkAZ4VLsWk4bVkoL8GssC3u836MiquGSHsb9H3wxHQH",
+      "transaction": "6385idBejbHh6g4ffmdcGSHYZhB6njwjWAz4VkLB5DDwBoa2hXC5gEsYX5SWcBeJV9bBm8wjvFcmAf4wKqooDx3"
+    }
+  ],
+  "transaction": null,
+  "sandbox": true
+}

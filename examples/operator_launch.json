@@ -1,0 +1,22 @@
+{
+  "api_version": "2026-10",
+  "id": "EX-0001",
+  "type": "operator_launch",
+  "level": "RELATED",
+  "detected_at_utc": "2026-10-15 01:00:03",
+  "token": "BSGSHM81PqXMW17ZTtzmzJnMn5SPM9TaXMpYhgDEnt2D",
+  "operator": {
+    "id": "TW-9001",
+    "address": "DuejC8PsaVLvK2KZSUxMqSE57XiPRa6rFdm7sXSvveSU"
+  },
+  "summary": "Tracked operator TW-9001 created a new token.",
+  "evidence": [
+    {
+      "step": "create",
+      "wallet": "DuejC8PsaVLvK2KZSUxMqSE57XiPRa6rFdm7sXSvveSU",
+      "transaction": "4G1QtHVbEbPQSwnMv4RyWMGFBhPSfDyKBbWDmfPP8SMaJ77S6qx1JfFYHtJA1njEyPYhfBev68A7GFqemxSDiw2H"
+    }
+  ],
+  "transaction": "4G1QtHVbEbPQSwnMv4RyWMGFBhPSfDyKBbWDmfPP8SMaJ77S6qx1JfFYHtJA1njEyPYhfBev68A7GFqemxSDiw2H",
+  "sandbox": true
+}

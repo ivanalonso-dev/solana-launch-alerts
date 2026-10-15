@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:solana-launch-alerts:launch-alert:2026-10",
+  "title": "Solana launch alert",
+  "description": "A launch-risk alert about a Solana token launch, as defined in SPEC.md (version 2026-10). Unknown fields and unknown type codes must be ignored by consumers.",
+  "type": "object",
+  "required": ["api_version", "id", "type", "level", "detected_at_utc", "token", "operator", "summary", "evidence", "transaction", "sandbox"],
+  "properties": {
+    "api_version": {"type": "string", "description": "Version of the format.", "examples": ["2026-10"]},
+    "id": {"type": "string", "minLength": 1, "description": "Unique alert id; retries keep the same id."},
+    "type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Alert type code. Known codes are listed in 'examples'; new codes may appear and must be ignored if unknown.",
+      "examples": ["operator_launch", "operator_cluster_buy", "coordinated_support", "linked_wallet_buy", "funding_batch", "linked_wallet", "profit_sweep", "exit_route"]
+    },
+    "level": {"type": "string", "enum": ["RELATED", "COORDINATED", "SUSPECTED", "CONFIRMED"]},
+    "detected_at_utc": {"type": "string", "minLength": 1, "description": "UTC detection time, 'YYYY-MM-DD HH:MM:SS' or ISO 8601."},
+    "token": {"type": ["string", "null"], "description": "Token mint address, or null."},
+    "operator": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1, "description": "Provider's stable operator id."},
+        "address": {"type": ["string", "null"]}
+      }
+    },
+    "summary": {"type": "string"},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {"type": "string"},
+          "transaction": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "transaction": {"type": ["string", "null"]},
+    "sandbox": {"type": "boolean"}
+  }
+}
